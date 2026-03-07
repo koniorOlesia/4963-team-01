@@ -36,5 +36,5 @@ Add the data-proofer-ignore attribute to any tag to ignore it from every check.
 - Volodymyr Andriichak
 - Ivan Butryn
 - Vladyslav Bondarenko
-- Olesia Konior
+- Olesia Konior 
 - Iryna Sapeliuk
