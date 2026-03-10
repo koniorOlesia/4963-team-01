@@ -1,0 +1,19 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* outline: 1px solid red; */
+}
+
+:root {
+  --text-color: rgb(255, 255, 255);
+  --text-color-secondary: rgb(137, 128, 130);
+  --accent-color: rgb(200, 105, 58);
+  --background-color: rgb(38, 30, 28);
+
+  background-color: var(--background-color);
+  color: var(--text-color);
+  scroll-behavior: smooth;
+}
