@@ -1,0 +1,196 @@
+/* WINE CATEGORIES SECTION */
+
+.wine-categories {
+  padding: 80px 0;
+}
+
+.wine-categories__container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.wine-categories__cards {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 30px;
+  margin-bottom: 32px;
+  align-items: stretch;
+}
+
+.wine-categories__card {
+  min-height: 420px;
+  display: flex;
+  align-items: center;
+  padding: 48px 40px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  overflow: hidden;
+}
+
+.wine-categories__card--red {
+  background-image: url("../img/wine-categories-red.jpg");
+}
+
+.wine-categories__card--white {
+  background-image: url("../img/wine-categories-white.jpg");
+}
+
+.wine-categories__card::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
+
+.wine-categories__content {
+  max-width: 320px;
+  position: relative;
+  z-index: 2;
+}
+
+.wine-categories__title {
+  color: var(--color-light);
+  font-size: 42px;
+  line-height: 1.1;
+  margin-bottom: 16px;
+}
+
+.wine-categories__title::after {
+  content: "";
+  display: block;
+  width: 56px;
+  height: 3px;
+  margin-top: 14px;
+  background-color: var(--color-accent);
+}
+
+.wine-categories__text {
+  margin-bottom: 32px;
+  color: var(--color-light);
+  font-size: 20px;
+  line-height: 1.5;
+}
+
+.wine-categories__discount {
+  padding: 60px;
+  padding-right: 420px;
+  background-color: var(--color-accent);
+  background-image: url("../img/wine-categories-discount.png");
+  background-repeat: no-repeat;
+  background-position: right center;
+  background-size: 520px auto;
+}
+
+.wine-categories__discount-content {
+  max-width: 620px;
+}
+
+.wine-categories__discount-title {
+  color: var(--color-light);
+  font-size: 58px;
+  font-weight: 400;
+  line-height: 1.1;
+  margin-bottom: 20px;
+}
+
+.wine-categories__discount-text {
+  color: var(--color-light);
+  font-size: 24px;
+  line-height: 1.5;
+  margin-bottom: 32px;
+}
+
+.wine-categories__button,
+.wine-categories__discount-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  white-space: nowrap;
+}
+
+.wine-categories__discount-arrow {
+  font-size: 20px;
+  line-height: 1;
+}
+
+@media (max-width: 991px) {
+  .wine-categories__cards {
+    grid-template-columns: 1fr;
+  }
+
+  .wine-categories__card {
+    min-height: 360px;
+  }
+
+  .wine-categories__discount {
+    padding: 48px 32px;
+    padding-right: 32px;
+    background-position: right bottom;
+    background-size: 260px auto;
+  }
+
+  .wine-categories__discount-title {
+    font-size: 42px;
+  }
+
+  .wine-categories__discount-text {
+    font-size: 20px;
+  }
+  }
+
+@media 
+(max-width: 767px) {
+ .wine-categories {
+    padding: 56px 0;
+  }
+
+  .wine-categories__container {
+    padding: 0 16px;
+  }
+
+  .wine-categories__card {
+    min-height: 320px;
+    padding: 32px 24px;
+  }
+
+  .wine-categories__content {
+    max-width: 220px;
+  }
+
+  .wine-categories__title {
+    font-size: 32px;
+  }
+
+  .wine-categories__text {
+    font-size: 18px;
+    line-height: 1.4;
+  }
+
+  .wine-categories__discount {
+    padding: 40px 24px;
+    padding-right: 24px;
+    background-size: 180px auto;
+    background-position: right bottom;
+  }
+
+  .wine-categories__discount-title {
+    font-size: 28px;
+    line-height: 1.1;
+    max-width: 260px;
+  }
+
+  .wine-categories__discount-text {
+    font-size: 18px;
+    line-height: 1.4;
+    max-width: 260px;
+  }
+
+  .wine-categories__button,
+  .wine-categories__discount-button {
+    padding: 14px 20px;
+    font-size: 15px;
+  }
+  }
